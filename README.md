@@ -1,4 +1,4 @@
-# 🚀 Mission Control AI — Brazil Space Monitoring
+# Mission Control AI — Brazil Space Monitoring
 
 **FIAP — Global Solution 2026.1 | Prompt and Artificial Intelligence**
 * **Prof. Hercules Ramos** | Período: 1º Semestre de 2026
@@ -6,28 +6,28 @@
 
 ---
 
-### 👥 Integrantes
+### Integrantes
 * **Luan de Araujo Carneiro** — RM 573691
 * **Pedro Sampaio Mochnacs Arruda** — RM 573522
 * **Raul Sampaio Mochnacs Arruda** — RM 573523
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 Mission Control AI é um sistema inteligente de monitoramento e controle de missão espacial experimental desenvolvido em Python com integração de IA generativa (modelo Llama 3.2 via Ollama).
 
 O sistema recebe, interpreta e exibe dados simulados de 6 ciclos operacionais da missão, monitorando 5 sistemas críticos:
-* 🌡️ **Temperatura interna dos módulos**
-* 📡 **Comunicação com a base terrestre**
-* 🔋 **Energia (nível de bateria / geração solar)**
-* 💨 **Oxigênio (suporte de vida)**
-* ⚙️ **Estabilidade operacional geral**
+* Temperatura interna dos módulos
+* Comunicação com a base terrestre
+* Energia (nível de bateria / geração solar)
+* Oxigênio (suporte de vida)
+* Estabilidade operacional geral
 
 A IA analisa cada ciclo individualmente, identifica riscos, dispara alertas automáticos com lógica de decisão estruturada e gera um relatório executivo final com recomendações.
 
 ---
 
-## 🧠 Como a IA está integrada
+## Como a IA está integrada
 O sistema utiliza o modelo Llama 3.2 rodando localmente via Ollama no Google Colab, aplicando as seguintes técnicas:
 
 | Técnica | Aplicação |
@@ -40,29 +40,29 @@ O sistema utiliza o modelo Llama 3.2 rodando localmente via Ollama no Google Col
 
 ---
 
-## ⚙️ Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
-* ✅ **Monitoramento de 5 parâmetros:** Cada parâmetro possui classificação em 3 níveis (NORMAL, ATENÇÃO e CRÍTICO), com pontuação de risco acumulada por ciclo.
-* ✅ **Alertas automáticos:** Geração de alertas quando parâmetros ultrapassam os limiares críticos:
+* **Monitoramento de 5 parâmetros:** Cada parâmetro possui classificação em 3 níveis (NORMAL, ATENÇÃO e CRÍTICO), com pontuação de risco acumulada por ciclo.
+* **Alertas automáticos:** Geração de alertas quando parâmetros ultrapassam os limiares críticos:
   * Temperatura > 35°C → Risco de superaquecimento.
   * Comunicação < 30% → Perda de contato crítica.
   * Bateria < 20% → Colapso de energia iminente.
   * Oxigênio < 80% → Risco para a tripulação.
   * Estabilidade < 40% → Instabilidade operacional crítica.
-* ✅ **Lógica de tomada de decisão:**
+* **Lógica de tomada de decisão:**
   * Se bateria < 20% → ATIVAR modo de economia + captação fotovoltaica.
   * Se oxigênio < 80% → ACIONAR protocolo de suporte à vida.
   * Se comunicação < 30% → TENTAR restabelecer via antena de backup.
   * Se temperatura crítica → ATIVAR controle térmico dos módulos.
   * Se 3+ sistemas críticos → MODO DE SEGURANÇA MÁXIMO.
-* ✅ **Resposta automatizada para situações críticas:** No Ciclo 5 (colapso múltiplo), o sistema dispara ALERTA MÁXIMO e aciona todos os protocolos simultaneamente.
-* ✅ **Interface conversacional (ipywidgets):** Chat interativo onde o operador pode consultar status de qualquer sistema, histórico de ciclos e protocolos.
-* ✅ **Bateria de testes automatizados:** 8 casos de teste com exportação dos resultados em JSON.
-* ✅ **Relatório final com IA:** Relatório consolidado com médias, indicadores de risco e análise executiva da IA.
+* **Resposta automatizada para situações críticas:** No Ciclo 5 (colapso múltiplo), o sistema dispara ALERTA MÁXIMO e aciona todos os protocolos simultaneamente.
+* **Interface conversacional (ipywidgets):** Chat interativo onde o operador pode consultar status de qualquer sistema, histórico de ciclos e protocolos.
+* **Bateria de testes automatizados:** 8 casos de teste com exportação dos resultados em JSON.
+* **Relatório final com IA:** Relatório consolidado com médias, indicadores de risco e análise executiva da IA.
 
 ---
 
-## 🖼️ Demonstração (Prints do Sistema)
+## Demonstração (Prints do Sistema)
 
 Abaixo estão as capturas de tela do painel de monitoramento e controle operando em tempo real:
 
@@ -80,7 +80,7 @@ Abaixo estão as capturas de tela do painel de monitoramento e controle operando
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Versão | Uso |
 | :--- | :--- | :--- |
@@ -93,11 +93,11 @@ Abaixo estão as capturas de tela do painel de monitoramento e controle operando
 
 ---
 
-## ▶️ Como Executar
+## Como Executar
 
 O projeto roda 100% no Google Colab, sem necessidade de instalar dependências locais em sua máquina.
 
-1. Clique no botão abaixo para abrir o ambiente de desenvolvimento:
+1. Clique no link abaixo para abrir o ambiente de desenvolvimento:
 
    https://colab.research.google.com/drive/1z0YDw0teF08l7te4EOy9yJXnlU0dcxhC?authuser=0#scrollTo=92K2aZLF-Ze1
 
@@ -112,15 +112,15 @@ O projeto roda 100% no Google Colab, sem necessidade de instalar dependências l
 * **Célula 7:** Executa a suíte de testes automatizados e gera o arquivo de saída em formato JSON.
 * **Célula 8:** Consolida os dados no relatório executivo final usando IA generativa.
 
-> ⚠️ **Nota:** Certifique-se de que a Célula 1 terminou por completo o download de ~2GB do modelo antes de tentar realizar chamadas de chat manuais.
+> **Nota:** Certifique-se de que a Célula 1 terminou por completo o download de ~2GB do modelo antes de tentar realizar chamadas de chat manuais.
 
 ---
 
-## 🎬 Vídeo de Demonstração
+## Vídeo de Demonstração
 
 Assista ao vídeo explicativo de até 3 minutos apresentando o projeto completo, a defesa do time e o sistema em pleno funcionamento:
 
-👉 [Assistir ao Vídeo de Demonstração no YouTube / Vimeo](https://SEU_LINK_DO_VIDEO_AQUI)
+[Assistir ao Vídeo de Demonstração](https://SEU_LINK_DO_VIDEO_AQUI)
 
 ---
- Desenvolvido para a Global Solution FIAP.*
+*Desenvolvido para a Global Solution FIAP.*
