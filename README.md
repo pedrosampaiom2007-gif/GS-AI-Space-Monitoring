@@ -89,7 +89,7 @@ Abaixo estão as capturas de tela do painel de monitoramento e controle operando
 | **Llama 3.2** | 3B | Modelo de linguagem responsável pelas análises e relatórios. |
 | **ipywidgets** | latest | Construção da interface de chat interativa e dinâmica. |
 | **Google Colab** | — | Ambiente de execução em nuvem baseado em notebooks. |
-| **JSON** | — | Formato para exportação e armazenamento dos logs de testes. |
+e
 
 ---
 
